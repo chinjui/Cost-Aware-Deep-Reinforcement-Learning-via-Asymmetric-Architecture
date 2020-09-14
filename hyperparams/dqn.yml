@@ -1,0 +1,226 @@
+atari:
+  policy: 'CnnPolicy'
+  n_timesteps: !!float 1e7
+  buffer_size: 10000
+  learning_rate: !!float 1e-4
+  learning_starts: 10000
+  target_network_update_freq: 1000
+  train_freq: 4
+  exploration_final_eps: 0.01
+  exploration_fraction: 0.1
+  prioritized_replay_alpha: 0.6
+  prioritized_replay: True
+
+CarRacing-v0:
+  n_timesteps: !!float 200000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-4
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+MountainCarContinuous-v0:
+  n_timesteps: !!float 200000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-4
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+Pendulum-v0:
+  n_timesteps: !!float 60000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+LunarLanderContinuous-v2:
+  n_timesteps: !!float 1000000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+MinitaurBulletDuckEnv-v0:
+  n_timesteps: !!float 1500000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+BipedalWalker-v3:
+  n_timesteps: !!float 1500000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+Walker2d-v3:
+  n_timesteps: !!float 2500000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+Reacher-v2:
+  n_timesteps: !!float 1500000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+
+InvertedPendulum-v2:
+  n_timesteps: !!float 1600000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+InvertedDoublePendulum-v2:
+  n_timesteps: !!float 2500000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+HalfCheetah-v3:
+  n_timesteps: !!float 2500000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+Humanoid-v3:
+  n_timesteps: !!float 10000000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+
+Hopper-v3:
+  n_timesteps: !!float 2500000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+Ant-v3:
+  n_timesteps: !!float 2500000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+Swimmer-v3:
+  n_timesteps: !!float 2500000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+
+FetchPush-v1:
+  n_timesteps: !!float 1900000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+
+FetchReach-v1:
+  n_timesteps: !!float 1900000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+
+FetchPickAndPlace-v1:
+  n_timesteps: !!float 1900000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+
+FetchPickAndPlaceDense-v1:
+  n_timesteps: !!float 1900000
+  policy: 'MlpPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+  policy_kwargs: "dict(layers=[32, 32])"
+
+CartPole-v1:
+  n_timesteps: !!float 1e5
+  policy: 'CustomDQNPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
+
+MountainCar-v0:
+  n_timesteps: 100000
+  policy: 'CustomDQNPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.1
+  param_noise: True
+
+LunarLander-v2:
+  n_timesteps: !!float 2e5
+  policy: 'CustomDQNPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 100000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.05
+  prioritized_replay: True
+
+Acrobot-v1:
+  n_timesteps: !!float 1e5
+  policy: 'CustomDQNPolicy'
+  learning_rate: !!float 1e-3
+  buffer_size: 50000
+  exploration_fraction: 0.1
+  exploration_final_eps: 0.02
+  prioritized_replay: True
