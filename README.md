@@ -1,6 +1,6 @@
-# Computational Cost-Aware Control Using Hierarchical Reinforcement Learning
+# Reducing Deployment-Time Computational Cost of Deep Reinforcement Learning via an Asymmetric Architecture
 
-This repository is the official implementation of "Computational Cost-Aware Control Using Hierarchical Reinforcement Learning".
+This repository is the official implementation of "Reducing Deployment-Time Computational Cost of Deep Reinforcement Learning via an Asymmetric Architecture".
 
 <img src="./assets/flowchart.png" width="850">
 
