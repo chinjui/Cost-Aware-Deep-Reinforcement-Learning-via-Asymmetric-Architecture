@@ -4,7 +4,7 @@ This repository is the official implementation of "Reducing Deployment-Time Comp
 
 <img src="./assets/flowchart.png" width="850">
 
-The methodology performs cost-aware control based on the HRL framework. The master policy is trained to take computational costs into its consideration, such that the two sub-policies are used for task segments with different control complexities. This methodology is able to provide sufficient performances while reducing the computational costs required for completing the tasks.
+we propose an asymmetric architecture that reduces the overall costs via switching between a computationally expensive policy network and an economic one. The experimental results evaluated on a number of benchmark suites for common control tasks demonstrate that our method is able to reduce the computational costs while retaining the agent's overall performance.
 
 <img src="./assets/timeline-swimmer-deterministic.png" width="600">
 
